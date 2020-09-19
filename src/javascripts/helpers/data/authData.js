@@ -1,14 +1,17 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import pasture from '../../components/pasture/pasture';
+import userData from './userData';
+
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      console.warn(user);
+      userData.getUser(user);
       $('#navbar-logout-button').removeClass('hide');
       $('#auth').addClass('hide');
       $('#pasture').removeClass('hide');
-      $('#pasture').html(`<img src="${user.photoURL} alt="${user.displayName}">`);
+      pasture.buildCows();
     } else {
       $('#navbar-logout-button').addClass('hide');
       $('#auth').removeClass('hide');

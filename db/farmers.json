@@ -1,0 +1,17 @@
+{
+    "farmer1": {
+        "name": "Dr. T",
+        "age": 42,
+        "uid": "GYKpcbE0pBYipt7lPlfp11JW4Yw1"
+    },
+    "farmer2": {
+        "name": "Jacob",
+        "age": 36,
+        "uid": "QVVGg08Im1OBgbfSCNucLaTrkfJ3"
+    },
+    "farmer3": {
+        "name": "Abbey",
+        "age": 28 ,
+        "uid": "youngbuck"
+    }
+}
